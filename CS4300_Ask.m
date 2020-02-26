@@ -31,7 +31,7 @@ for s = 1:len_sentence
     KB(num_sentences+1).clauses = -sentence(s).clauses;
     CS4300_create_SAT_prob(KB,'HYBKB');
     % Handle different operation systems
-    if isunix
+    if(isunix)
         system('python sat.py < HYBKB >popoo');
     else
         system('sat.py < HYBKB >popoo');
