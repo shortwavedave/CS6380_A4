@@ -1,0 +1,23 @@
+function KB = CS6380_create_beliefs(file)
+% CS6380_create_beliefs - Constructs beliefs for an agent.
+% On input:
+%     filename (char array): Path to plain-text file specifying 
+%     beleifs where each line is a clause consisting of logical
+%     atoms.    
+% On output:
+%     KB (struct vector): Knowledge base in CNF.
+%       .clause (1 X N double array): Clause that is a disjunction
+%       of the logical atoms.
+% Call:
+%     KB = CS6380_create_beliefs(file);
+% Example:
+%     file = './beliefs.txt';
+%     KB = CS6380_create_beliefs(file);
+% Notes:
+%     1. User must ensure that the     
+% Author:
+%     T. Henderson
+%     UU
+%     Spring 2020
+%
+end
